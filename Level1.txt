@@ -1,0 +1,41 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  IT WILL CREATE A DIRECTORY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$ mkdir store // It'll create a directory in my HOME.
+
+$ cd store  // it will allow to get in the store directory 
+
+$ git init   // GIT METADATA IS STORED HERE
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% now, let's assume have created a file. The one start untracked %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// as soon as you are ready to start tracking that file you are going to add in a STAGE AREA. In this area you are getting ready to take a picture of the file.The next step you are going to create your first commit, which is basically take a snapshot of your file.
+To summarise : (1) CREATE A FILE
+               (2) Add file to staging area
+               (3) Commit changes
+
+What we are going to do next is:
+               (1) CREATE A FILE
+               (2) Add file to staging area
+               (3) Commit changes
+               (4) Modifie the file and add LICENSE
+               (5) Add both files to staging are
+               (6) Commit changes
+                
+
+However, we'll see that while i introduce to you some commands:
+
+$ git status        // to check what's changed since last commit
+$ git add FILE.txt  // To add in the stage are
+$ git commit -m "Create a README."// To make a commit. What is between the quotation marks is a message about what work was done.
+// Now, change something in your file and add a license. If you type $ git status you'll see your tracked file , readme, has been modified and there is now a new file.
+$ git add README.txt LICENSE       or        $ git add --all  / both of those options add the files in the stage area.
+$ git commit -m " Add LICENSE and finish README."
+
+
+
+Another good thing to know about is:
+
+$ git log  // When should i use it ? Well, when you execute more than one commit, the last one it will be on the top of your timeline. To know what was commited, the day and the author, we use git log. The one will give to you all those information.

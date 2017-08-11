@@ -1,0 +1,30 @@
+// It is good to know what $ git diff does. Let's say for an example, you are in your local repo and you made a change to your file and you don't remember what that change was. If you type git diff it will shown to you a read line ( what was removed ) and a green line ( what was most recently added ).
+
+$ git add Some_New_File.txt
+
+$ git status // if you use this command right now, we are going to see that we have that one license file that's STAGED and it is ready to get commited. However, what if we staged stuff that we dont reallt mean to get staged ? how do we get thing OFF the stage ?To do so
+$ git reset HEAD <FILE> // HEAD refers to your last commit
+
+// if you want to reset it to the state that file was in at the last commit, or the last time it was changed:
+$ git checkout -- <FILENAME>
+
+$ git commit -a -m "Modify readme"       add changes from all tracked files to the stage and then commit them.
+
+$ git reset --soft HEAD^ // UNDO THE LAST COMMIT AND MOVE EVERYTHING FROM THAT BACK INTO STAGING. That little arrow in HEAD means : "move the commit one before to the current HEAD"
+
+$ git reset --hard HEAD^ // It'll blow away your last commit
+
+// What you'll send to GitHub/GitLab is what it is in your MASTER. What you have comitted.
+
+$ git commit --amed -m " Modify readme & add todo.txt ." // When you run this message what you ared oing is: " Damn it, i forgot to add some file in the last commit AND i don't want to commit something again! Well, what you are going to do is type that message and the file that it is in your STAGE AREA will be committed in your last HEAD. PS: eu can re-write the message with this.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ok, now let's see how to push something to GitHub %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+First thing:  Go to GitHub and create a project. Since you done that, you'll see that GitHub gives to you a URL. Well, if you type this message:
+
+$ git remote add origin https://github.com/Laitano/Bubble-Sort-Code.git  // the "add" is creating a new remote. The name " origin " is basicallt our name for this repository - Usually the main repository which everybody is using it, it's called ORIGIN.  And then, the GitHub address.  PS : This remotes are like bookmarks. We are bookmarking that this origin refers to this URL.
+
+$ git push -u origin master // Now you have added the files to GitHub.
+
+
+
