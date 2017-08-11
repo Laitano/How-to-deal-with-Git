@@ -8,7 +8,9 @@ $ git reset HEAD <FILE> // HEAD refers to your last commit
 // if you want to reset it to the state that file was in at the last commit, or the last time it was changed:
 $ git checkout -- <FILENAME>
 
-$ git commit -a -m "Modify readme"       add changes from all tracked files to the stage and then commit them.
+$ git commit -a -m "Modify readme"  //     add changes from all tracked files to the stage and then commit them.
+
+$ git reset FILE // you must use this command whenever you want to delete some file that you have just added to stage 
 
 $ git reset --soft HEAD^ // UNDO THE LAST COMMIT AND MOVE EVERYTHING FROM THAT BACK INTO STAGING. That little arrow in HEAD means : "move the commit one before to the current HEAD"
 
@@ -16,7 +18,7 @@ $ git reset --hard HEAD^ // It'll blow away your last commit
 
 // What you'll send to GitHub/GitLab is what it is in your MASTER. What you have comitted.
 
-$ git commit --amed -m " Modify readme & add todo.txt ." // When you run this message what you ared oing is: " Damn it, i forgot to add some file in the last commit AND i don't want to commit something again! Well, what you are going to do is type that message and the file that it is in your STAGE AREA will be committed in your last HEAD. PS: eu can re-write the message with this.
+$ git commit --amend -m " Modify readme & add todo.txt ." // When you run this message what you are git add doing is: " Damn it, i forgot to add some file in the last commit AND i don't want to commit something again! Well, what you are going to do is type that message and the file that it is in your STAGE AREA will be committed in your last HEAD. PS: eu can re-write the message with this.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ok, now let's see how to push something to GitHub %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -26,5 +28,8 @@ $ git remote add origin https://github.com/Laitano/Bubble-Sort-Code.git  // the 
 
 $ git push -u origin master // Now you have added the files to GitHub.
 
+$ git remote add <name (origin or git_origin)> <address> // to add new remotes
 
+$ git remote rm <name> // to remove remotes
 
+$ git push -u <name> <branch (so far, we are using master)>
