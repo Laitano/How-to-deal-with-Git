@@ -33,3 +33,32 @@ $ git remote add <name (origin or git_origin)> <address> // to add new remotes
 $ git remote rm <name> // to remove remotes
 
 $ git push -u <name> <branch (so far, we are using master)>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################### JUST CHECKING #######################
+
+
+
+
+
+
