@@ -14,3 +14,5 @@ Go to master, $ git checkout master
 Now on master, merge them:  $ git merge
 Now, just push the changes do GitHub:   $ git push
 
+
+:)
