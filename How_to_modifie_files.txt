@@ -7,12 +7,12 @@ Create a directory.
 In this directory, by terminal, use: $ git clone URL.
 Create a branch ($ git branch)
 Go to branch ($ git checkout)
+type: $ git push origin BRANCH'S NAME  // links local branch to remote branch. Well, it's only necessary if you are going to stay working on this branch for more than a day.
 Open the file that you want to change (gedit FILE &).
 After changing whatever you wanna change, type: $ git add    
 Then, & git commit -m "Message"
 Go to master, $ git checkout master
 Now on master, merge them:  $ git merge
-Now, just push the changes do GitHub:   $ git push
+Now, just push the changes do GitHub:   $ git push 
 
-
-:)
+:@
