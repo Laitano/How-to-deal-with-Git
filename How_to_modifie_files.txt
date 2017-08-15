@@ -12,7 +12,7 @@ Open the file that you want to change (gedit FILE &).
 After changing whatever you wanna change, type: $ git add    
 Then, & git commit -m "Message"
 Go to master, $ git checkout master
-Now on master, merge them:  $ git merge
+Now on master, merge them:  $ git merge BRANCH'S NAME
 Now, just push the changes do GitHub:   $ git push 
 
 :@
